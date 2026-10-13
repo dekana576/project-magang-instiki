@@ -2,12 +2,18 @@ import TopBar from "@/components/fragments/TopBar";
 
 export default function RegisterPage() {
   return (
-    <main>
+    <div className="min-h-screen bg-white flex flex-col items-center">
+
       <TopBar />
-      {/* Konten halaman register Anda */}
-      <div className="p-6">
-        <h1 className="text-2xl font-bold"></h1>
+      {/* isi disini form nya : contoh */}
+      <div className="flex items-center justify-center flex-1">
+        <h1 className="text-2xl font-bold text-zinc-800">Register Page</h1>
       </div>
-    </main>
+
+    </div>
   );
 }
+
+
+
+

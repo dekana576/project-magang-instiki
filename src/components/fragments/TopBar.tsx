@@ -1,13 +1,10 @@
-import React from "react";
-
 export default function TopBar() {
   return (
     <header className="w-full min-h-[90px] sm:min-h-[110px] md:min-h-[120px] bg-[#4696E0] flex items-center justify-between px-4 sm:px-8 md:px-12 py-3 sm:py-4 shadow-md">
-      {/* Sisi Kiri: Lingkaran dan Teks Instansi */}
+      {/* Sisi Kiri: Lingkaran dan Teks */}
       <div className="flex items-center gap-3 sm:gap-6">
         {/* Lingkaran Kiri */}
         <div className="w-[52px] h-[52px] sm:w-[70px] sm:h-[70px] md:w-[85px] md:h-[85px] rounded-full bg-white shrink-0 shadow-sm" />
-
         {/* Teks Header */}
         <div className="flex flex-col text-white">
           <h1 className="text-xs sm:text-base md:text-xl font-bold tracking-tight uppercase leading-snug">
