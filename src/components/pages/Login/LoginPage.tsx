@@ -1,71 +1,23 @@
-import Image from "next/image";
+import TopBar from "@/components/fragments/TopBar";
 import LoginForm from "@/components/fragments/Login/LoginForm";
 
 export default function LoginPage() {
   return (
-    <main className="min-h-dvh bg-white text-[#303030] lg:h-dvh lg:overflow-hidden lg:p-4">
-  <div className="grid min-h-dvh lg:h-full lg:min-h-0 lg:grid-cols-2">
+    <div className="flex min-h-dvh flex-col bg-[#F2F2F2] text-[#303030] lg:h-dvh lg:overflow-hidden">
+      <TopBar />
 
-        {/* Panel kiri */}
-        <section
-          className="relative hidden overflow-hidden rounded-2xl bg-[#127EC3] bg-cover bg-center text-white lg:flex"
-          style={{
-            backgroundImage: "url('/images/login-mosaic.svg')",
-          }}
-        >
-          <div className="absolute inset-0 bg-[#0876BB]/20" />
+      <main className="flex flex-1 flex-col p-4 lg:min-h-0 lg:px-[22px] lg:py-[18px]">
+        <section className="flex flex-1 flex-col rounded-lg border-2 border-black bg-[#FAFDFD] px-4 py-5 sm:px-7 lg:min-h-0 lg:px-[30px] lg:py-[21px]">
+          <div
+            aria-hidden="true"
+            className="h-[190px] w-full shrink-0 rounded-lg bg-[#D2E0FB] sm:h-[240px] lg:h-auto lg:max-h-[330px] lg:min-h-[110px] lg:flex-1"
+          />
 
-          <div className="relative flex w-full flex-col justify-between px-12 py-20 text-center xl:px-16">
-
-            <div>
-              <h1 className="text-4xl font-light xl:text-[42px]">
-                Welcome to Dimata PMO
-              </h1>
-
-              <p className="mt-5 text-lg font-light xl:text-2xl">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-              </p>
-            </div>
-
-            <div>
-              <h2 className="text-3xl font-light xl:text-4xl">
-                Lorem ipsum dolor sit amet
-              </h2>
-
-              <p className="mx-auto mt-8 max-w-xl text-lg font-light xl:text-2xl">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Nunc dictum orci a convallis porta
-              </p>
-
-              <div className="mt-12 flex items-center justify-center gap-1">
-                <span className="h-2 w-5 rounded-full bg-white" />
-                <span className="h-2 w-2 rounded-full bg-white/60" />
-                <span className="h-2 w-2 rounded-full bg-white/60" />
-              </div>
-            </div>
-
-          </div>
-        </section>
-
-        {/* Panel kanan */}
-        <section className="flex min-h-dvh items-center justify-center px-5 py-8 sm:px-10 lg:min-h-0 lg:overflow-y-auto lg:px-12 lg:py-4">
-          <div className="w-full max-w-[520px]">
-
-            <Image
-              src="/icons/Dimata-logo.png"
-              alt="Logo Dimata PMO"
-              width={185}
-              height={70}
-              className="mb-5 h-auto w-[160px] object-contain"
-              priority
-            />
-
+          <div className="mx-auto w-full max-w-[525px] shrink-0 pt-6 pb-4 lg:pt-6 lg:pb-3">
             <LoginForm />
-
           </div>
         </section>
-
-      </div>
-    </main>
+      </main>
+    </div>
   );
 }
