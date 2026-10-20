@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 
 export default function Sidebar() {
-    // State untuk dropdown "Data Pengajuan Layanan" dan "Berkas Pengajuan" (tertutup saat pertama masuk)
+    // State untuk dropdown "Data Pengajuan Layanan" dan "Berkas Pengajuan" 
     const [openDataPengajuan, setOpenDataPengajuan] = useState(false);
     const [openBerkasPengajuan, setOpenBerkasPengajuan] = useState(false);
 
@@ -37,7 +37,7 @@ export default function Sidebar() {
                 <div className="h-[1.5px] bg-white/40 mx-4 my-3.5" />
             </div>
 
-            {/* Konten Menu Navigasi (Bisa di-scroll tersendiri) */}
+            {/* Konten Menu Navigasi */}
             <div className="flex-1 overflow-y-auto px-3 [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-thumb]:bg-white/20 [&::-webkit-scrollbar-thumb]:rounded-full">
                 {/* Menu Utama Title */}
                 <div className="px-1 mb-2">

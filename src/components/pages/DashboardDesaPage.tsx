@@ -10,7 +10,7 @@ export default function DashboardDesaPage() {
       {/* Top Bar */}
       <TopBar />
 
-      {/* Kontainer Bawah: Sidebar di sisi kiri, Konten di sisi kanan */}
+      {/* Sidebar di sisi kiri, Konten di sisi kanan */}
       <div className="flex-1 flex overflow-hidden">
         {/* Sidebar */}
         <Sidebar />
