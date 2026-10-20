@@ -6,12 +6,12 @@ import TopBar from "@/components/fragments/TopBar";
 export default function OtpPage() {
   const inputRefs = useRef<(HTMLInputElement | null)[]>([]);
 
-  // Langsung fokus ke kotak pertama baru masuk
+  // Langsung masuk ke kotak pertama pas halaman kebuka
   useEffect(() => {
     inputRefs.current[0]?.focus();
   }, []);
 
-  // Pindah otomatis ke kotak berikutnya saat angka diketik
+  // Pindah otomatis ke depan saat ketik
   const handleInput = (index: number, e: React.FormEvent<HTMLInputElement>) => {
     const value = e.currentTarget.value;
 
@@ -24,7 +24,7 @@ export default function OtpPage() {
     }
   };
 
-  // Kembali otomatis ke kotak sebelumnya saat tekan Backspace
+  // pindah kebelakang waktu hapus
   const handleKeyDown = (index: number, e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Backspace" && !e.currentTarget.value && index > 0) {
       inputRefs.current[index - 1]?.focus();
@@ -74,7 +74,7 @@ export default function OtpPage() {
               ))}
             </div>
 
-            {/* Teks Kirim Ulang (Sejajar kanan dengan OTP dan pas di tengah) */}
+            {/* Teks Kirim Ulang */}
             <div className="w-full text-right text-xs sm:text-sm text-zinc-500 mb-4 sm:mb-5">
               Belum mendapatkan kode?{" "}
               <button

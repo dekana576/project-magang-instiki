@@ -6,15 +6,15 @@ import TopBar from "@/components/fragments/TopBar";
 export default function RegisterPage() {
   return (
     // mengatur komponen paling dasar atau utama seperti bg paling belakang
-    <div className="min-h-screen bg-[rgba(242, 242, 242, 1)] flex flex-col">
+    <div className="min-h-screen bg-[rgba(242,242,242,1)] flex flex-col">
       {/* header topBar */}
       <TopBar />
 
       {/* konten utama halaman register */}
-      <main className="flex-1 flex items-center justify-center p-4 sm:p-6 md:p-8">
+      <main className="flex-1 flex items-center justify-center py-[15px] px-[15px] ">
         {/* kotak pembungkus besar warna putih, tempat naruh berbagai objek atau elemen */}
-        <div className="bg-white border border-[rgba(112, 112, 112, 1)] rounded-lg w-full p-6 sm:p-8 md:p-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          
+        <div className="bg-white border border-[rgba(112,112,112,1)] rounded-lg w-full p-6 sm:p-8 md:p-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center shadow-sm">
+
           {/* Kotak biru muda yang bakal diisi oleh gambar */}
           <div className="bg-[#D9E6F6] rounded-xl p-8 sm:p-12 flex flex-col items-center justify-center text-center h-full min-h-[350px] lg:min-h-[450px]">
             {/* ini h3 nya nanti bakal dihapus pas pakai img */}

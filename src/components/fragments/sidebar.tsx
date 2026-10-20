@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 
 export default function Sidebar() {
-    // State untuk dropdown "Data Pengajuan Layanan" dan "Berkas Pengajuan" 
+    // State untuk dropdown Data Pengajuan Layanan dan Berkas Pengajuan
     const [openDataPengajuan, setOpenDataPengajuan] = useState(false);
     const [openBerkasPengajuan, setOpenBerkasPengajuan] = useState(false);
 
@@ -136,7 +136,7 @@ export default function Sidebar() {
                 </nav>
             </div>
 
-            {/* Profil User di Bawah Sidebar (Tetap di Bawah) */}
+            {/* Profil User dibawah */}
             <div className="shrink-0">
                 {/* Garis Putih Pemisah Bawah */}
                 <div className="h-[1.5px] bg-white/40 mx-4 my-3" />
